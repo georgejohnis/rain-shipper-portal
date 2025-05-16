@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain - Shipper Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-cloud-rain"></i> Rain</h1>
+                <p class="tagline">Package Transportation Services</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="login-btn"><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Shipper Portal</h2>
+            <p>Bid for package delivery contracts in the Greater New York Metropolitan Area</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section class="login-section">
+                <h3>Login to Your Account</h3>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+                </form>
+            </section>
+
+            <section class="contracts-section">
+                <h3>Available Delivery Contracts</h3>
+                <div class="contract-filters">
+                    <select name="sort" id="sort">
+                        <option value="newest">Newest First</option>
+                        <option value="deadline">Deadline</option>
+                        <option value="value">Contract Value</option>
+                    </select>
+                    <input type="text" placeholder="Search contracts...">
+                    <button class="btn">Filter</button>
+                </div>
+                
+                <div class="contracts-list">
+                    <div class="contract-card">
+                        <div class="contract-header">
+                            <h4>Contract #12345</h4>
+                            <span class="badge">Open for Bids</span>
+                        </div>
+                        <div class="contract-details">
+                            <p><strong>Origin:</strong> Manhattan, NY</p>
+                            <p><strong>Destination:</strong> Brooklyn, NY</p>
+                            <p><strong>Package Size:</strong> Medium (15 lbs)</p>
+                            <p><strong>Deadline:</strong> May 20, 2025</p>
+                            <p><strong>Current Lowest Bid:</strong> $45.00</p>
+                        </div>
+                        <div class="contract-actions">
+                            <button class="btn">Place Bid</button>
+                            <button class="btn btn-secondary">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="contract-card">
+                        <div class="contract-header">
+                            <h4>Contract #12346</h4>
+                            <span class="badge">Open for Bids</span>
+                        </div>
+                        <div class="contract-details">
+                            <p><strong>Origin:</strong> Queens, NY</p>
+                            <p><strong>Destination:</strong> Jersey City, NJ</p>
+                            <p><strong>Package Size:</strong> Large (30 lbs)</p>
+                            <p><strong>Deadline:</strong> May 22, 2025</p>
+                            <p><strong>Current Lowest Bid:</strong> $65.00</p>
+                        </div>
+                        <div class="contract-actions">
+                            <button class="btn">Place Bid</button>
+                            <button class="btn btn-secondary">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="contract-card">
+                        <div class="contract-header">
+                            <h4>Contract #12347</h4>
+                            <span class="badge">Open for Bids</span>
+                        </div>
+                        <div class="contract-details">
+                            <p><strong>Origin:</strong> Bronx, NY</p>
+                            <p><strong>Destination:</strong> Yonkers, NY</p>
+                            <p><strong>Package Size:</strong> Small (5 lbs)</p>
+                            <p><strong>Deadline:</strong> May 19, 2025</p>
+                            <p><strong>Current Lowest Bid:</strong> $30.00</p>
+                        </div>
+                        <div class="contract-actions">
+                            <button class="btn">Place Bid</button>
+                            <button class="btn btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bid-section">
+                <h3>Place a New Bid</h3>
+                <form class="bid-form">
+                    <div class="form-group">
+                        <label for="contract-id">Contract ID</label>
+                        <input type="text" id="contract-id" name="contract-id" placeholder="Enter contract ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="bid-amount">Bid Amount ($)</label>
+                        <input type="number" id="bid-amount" name="bid-amount" placeholder="Enter your bid amount">
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-time">Estimated Delivery Time (hours)</label>
+                        <input type="number" id="delivery-time" name="delivery-time" placeholder="Enter estimated delivery time">
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Additional Notes</label>
+                        <textarea id="notes" name="notes" placeholder="Any additional information about your bid"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Bid</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <section class="features">
+        <div class="container">
+            <h3>Why Choose Rain?</h3>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Local Expertise</h4>
+                    <p>Specialized in the Greater New York Metropolitan Area with knowledge of all routes and traffic patterns.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h4>Fast Delivery</h4>
+                    <p>Guaranteed delivery within the promised timeframe or your money back.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Secure Handling</h4>
+                    <p>All packages are handled with care and fully insured during transit.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h4>Competitive Pricing</h4>
+                    <p>Our bidding system ensures you get the best market rates for your deliveries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rain Transportation Services</h4>
+                    <p>Providing reliable package delivery within a 50-mile radius of the Greater New York Metropolitan Area.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Delivery St, New York, NY 10001</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@raindelivery.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rain Transportation Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
