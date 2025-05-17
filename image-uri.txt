@@ -1,0 +1,1 @@
+748809150323.dkr.ecr.us-west-2.amazonaws.com/rain-shipper-portal:latest
