@@ -13,8 +13,6 @@ rain-shipper-portal/
 │       │   └── styles.css
 │       ├── js/           # JavaScript files
 │       └── index.html    # Main HTML file
-├── backend/
-│   └── src/              # Backend source code (to be implemented)
 └── README.md             # Project documentation
 ```
 
