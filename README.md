@@ -36,22 +36,6 @@ The frontend is a static website built with HTML and CSS that showcases the ship
 - CSS3
 - Font Awesome icons
 
-## Backend
-
-The backend is currently a placeholder for future implementation. It will be responsible for:
-
-- API endpoints for contract management
-- User authentication and authorization
-- Bid processing
-- Database interactions
-
-## Getting Started
-
-To view the website locally:
-
-1. Clone this repository
-2. Open `frontend/src/index.html` in your web browser
-
 ## Preview
 
 The website includes:
